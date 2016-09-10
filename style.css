@@ -90,7 +90,7 @@ slide {
 }
 
 .welcome-slide {
-  background: #000000;
+  background: linear-gradient(#000000, #331111);
   display: flex;
   flex-direction: column;
   position: relative;
