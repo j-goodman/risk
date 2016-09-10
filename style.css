@@ -1,7 +1,7 @@
 body {
   background: #577CB0;
-  background: linear-gradient(#577CB0, #274C90);
-  font-family: Verdana, sans-serif;
+  background: linear-gradient(#577CB0, #000C50);
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
   height: 100%;
 }
 
@@ -70,15 +70,15 @@ slide {
 
 .expant {
   transition: letter-spacing 6s;
-  letter-spacing: 24px;
+  letter-spacing: 27px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1080px) {
   .headline {
     letter-spacing: 2px;
   }
   .expant {
-    transition: letter-spacing 6s;
+    transition: letter-spacing 7s;
     letter-spacing: 6px;
   }
 }
@@ -89,11 +89,86 @@ slide {
   }
 }
 
-.overhead-banner, .main-banner, .home-box {
+.welcome-slide {
+  background: #000000;
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: -100%;
 }
 
+.overhead-banner, .main-banner, .home-box {
+  color: #999999;
+  margin: auto;
+}
+
+.overhead-banner {
+  letter-spacing: 38px;
+}
+
+.main-banner {
+  border-top: 4px solid #ED2919;
+  border-bottom: 4px solid #ED2919;
+  color: #ED2919;
+  font-size: 140px;
+  transform: translateY(-10px);
+}
+
+.risen {
+  color: #FF0000;
+  font-size: 144px;
+  transform: translateY(-16px);
+  transition: transform 4s, font-size 4s, color 4s;
+}
+
+.home-box {
+  font-size: 18px;
+}
+
 switchboard {
-  display: block;
+  display: flex;
+  flex-direction: row;
+}
+
+selector {
+  background: #C6BD7A;
+  border-radius: 4px;
+  color: #000000;
+  cursor: pointer;
+  margin: 15px;
+  padding: 8px;
+  text-align: center;
+  transition: padding .12s;
+}
+
+selector:hover {
+  padding: 7px;
+  transition: padding .3s;
+}
+
+@media screen and (max-width: 1080px) {
+  .overhead-banner {
+    letter-spacing: 12px;
+  }
+  .main-banner {
+    font-size: 90px;
+  }
+  .risen {
+    font-size: 92px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .overhead-banner {
+    letter-spacing: 2px;
+  }
+  .main-banner {
+    font-size: 36px;
+  }
+  .risen {
+    font-size: 38px;
+  }
+  switchboard {
+    flex-direction: column;
+  }
 }
