@@ -10,7 +10,7 @@ onLoad = function () {
     slide[0].className = 'blue-marble-slide';
     slide[1].className = 'welcome-slide active';
     title.className += ' risen';
-  }, 2600);
+  }, 3200);
 };
 
 window.onload = onLoad;

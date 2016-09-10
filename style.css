@@ -63,14 +63,14 @@ slide {
 .headline {
   color: #999999;
   transform: translateY(120px);
-  letter-spacing: 18px;
+  letter-spacing: 12px;
   text-align: center;
   white-space: nowrap;
 }
 
 .expant {
   transition: letter-spacing 6s;
-  letter-spacing: 27px;
+  letter-spacing: 16px;
 }
 
 @media screen and (max-width: 1080px) {
